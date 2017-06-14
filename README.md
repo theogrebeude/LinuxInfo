@@ -93,7 +93,7 @@ tmpfs                  16G     0   16G   0% /dev/shm
 
 ## Authors
 
-* **Théo Grébeude Thompson** - *Initial work* - [github](https://github.com/theogrebeude)
+* **Théo Grébeude ** - [github](https://github.com/theogrebeude)
 
 
 ## License
