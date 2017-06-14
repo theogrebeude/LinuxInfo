@@ -8,8 +8,7 @@ echo "---------------------------"
 echo "-----INFO-CPU--------------"
 echo "---------------------------"
 lscpu
-#lscpu - cat /proc/cpuinfo
-# cat /proc/cpuinfo
+more /proc/cpuinfo | grep "model name"
 echo "---------------------------"
 echo "-----INFO-RAM--------------"
 echo "---------------------------"
