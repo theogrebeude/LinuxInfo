@@ -4,8 +4,8 @@ show Hardware information of linux machine ( virtual or not)
 for using juste run the info.sh script 
 
 
-#exemple of output
-
+## exemple of output
+```
 ---------------------------
 -----INFO-OS---------------
 ---------------------------
@@ -83,3 +83,4 @@ Filesystem            Size  Used Avail Use% Mounted on
 tmpfs                  16G     0   16G   0% /dev/shm
 /dev/sda1             200M  264K  200M   1% /boot/efi
 /dev/sdb1              99G   46G   49G  49% /opt
+```
