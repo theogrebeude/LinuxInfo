@@ -33,21 +33,20 @@ else
 	lspci | grep "Ethernet controller"
 fi
 echo ""
-ifconfig
+ip a
 echo "---------------------------"
 echo "-----INFO-DISK-------------"
 echo "---------------------------"
 df -h
  
- 
- 
- 
-string = 'echo "cat /etc/*-release"'
-echo $string
-if [[ $string == *"raspbian"* ]]; then
-  echo "C'est un pi "
+echo ""
+
+STRING='cat /etc/*-release'
+eval $STRING
+if [[ $STRING == *"raspbian"* ]]; then
+    echo "C'est un pi "
 fi
-string ="raspbian"
-if grep -q foo <<<$string; then
-    echo "It's there"
+STRING="raspbian"
+if grep -q foo <<<$STRING; then
+  echo "It's there"
 fi
