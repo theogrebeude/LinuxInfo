@@ -3,8 +3,14 @@ show Hardware information of linux machine ( virtual or not)
 
 for using juste run the info.sh script 
 
+### Prerequisites
 
-## Exemple output
+make shure the info.sh file is runable, if not us 
+```
+chmod u+x info.sh
+```
+
+### Exemple output
 ```
 ---------------------------
 -----INFO-OS---------------
@@ -84,3 +90,12 @@ tmpfs                  16G     0   16G   0% /dev/shm
 /dev/sda1             200M  264K  200M   1% /boot/efi
 /dev/sdb1              99G   46G   49G  49% /opt
 ```
+
+## Authors
+
+* **Théo Grébeude Thompson** - *Initial work* - [github](https://github.com/theogrebeude)
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
