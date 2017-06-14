@@ -1,11 +1,11 @@
 # LinuxInfo
-show Hardware information of linux machine ( virtual or not)
+Show hardware information of the Linux machine whether virtual or not
 
-for using juste run the info.sh script 
+To use it just run the info.sh script
 
 ### Prerequisites
 
-make shure the info.sh file is runable, if not us 
+Make sure the info.sh file is runable, if not use 
 ```
 chmod u+x info.sh
 ```
