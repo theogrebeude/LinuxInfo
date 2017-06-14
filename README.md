@@ -41,6 +41,14 @@ L1i cache:             32K
 L2 cache:              256K
 L3 cache:              20480K
 NUMA node0 CPU(s):     0-7
+model name          : Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz
+model name          : Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz
+model name          : Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz
+model name          : Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz
+model name          : Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz
+model name          : Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz
+model name          : Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz
+model name          : Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz
 ---------------------------
 -----INFO-RAM--------------
 ---------------------------
