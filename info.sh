@@ -4,11 +4,12 @@ echo "---------------------------"
 echo "-----INFO-OS---------------"
 echo "---------------------------"
 uname -a
+lsb_release -a
 echo "---------------------------"
 echo "-----INFO-CPU--------------"
 echo "---------------------------"
-lscpu
 more /proc/cpuinfo | grep -m1  "model name"
+lscpu
 echo "---------------------------"
 echo "-----INFO-RAM--------------"
 echo "---------------------------"
@@ -16,12 +17,12 @@ awk '$3=="kB"{$2=$2/(1000*1000);$3="GB";} 1' /proc/meminfo  | column -t | grep M
 echo "---------------------------"
 echo "-----INFO-GPU--------------"
 echo "---------------------------"
-test=$(cat /etc/*-release)
-if [[ $test == *"raspbian"* ]]
+gpu=$(lspci | grep Graphics)
+if [[ $gpu ]]
 then
-	echo "GPU raspberry Pi "
+	echo $gpu
 else
-	lspci | grep Graphics
+	echo "No GPU informations find"
 fi
 echo "---------------------------"
 echo "-----INFO-NETWORK----------"
@@ -33,21 +34,8 @@ else
 	lspci | grep "Ethernet controller"
 fi
 echo ""
-ifconfig
+ip a
 echo "---------------------------"
 echo "-----INFO-DISK-------------"
 echo "---------------------------"
 df -h
- 
- 
- 
- 
-string = 'echo "cat /etc/*-release"'
-echo $string
-if [[ $string == *"raspbian"* ]]; then
-  echo "C'est un pi "
-fi
-string ="raspbian"
-if grep -q foo <<<$string; then
-    echo "It's there"
-fi
