@@ -16,9 +16,15 @@ chmod u+x info.sh
 -----INFO-OS---------------
 ---------------------------
 Linux STVLIFABORCHE01 2.6.32-573.12.1.el6.x86_64 #1 SMP Tue Dec 15 21:19:08 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+LSB Version:	:base-4.0-amd64:base-4.0-noarch:core-4.0-amd64:core-4.0-noarch:graphics-4.0-amd64:graphics-4.0-noarch:printing-4.0-amd64:printing-4.0-noarch
+Distributor ID:	CentOS
+Description:	CentOS release 6.7 (Final)
+Release:	6.7
+Codename:	Final
 ---------------------------
 -----INFO-CPU--------------
 ---------------------------
+model name	: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
 Architecture:          x86_64
 CPU op-mode(s):        32-bit, 64-bit
 Byte Order:            Little Endian
@@ -41,7 +47,6 @@ L1i cache:             32K
 L2 cache:              256K
 L3 cache:              20480K
 NUMA node0 CPU(s):     0-7
-model name          : Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz
 ---------------------------
 -----INFO-RAM--------------
 ---------------------------
@@ -49,39 +54,28 @@ MemTotal:           32.8798   GB
 ---------------------------
 -----INFO-GPU--------------
 ---------------------------
+No GPU informations find
 ---------------------------
 -----INFO-NETWORK----------
 ---------------------------
 03:00.0 Ethernet controller: VMware VMXNET3 Ethernet Controller (rev 01)
 0b:00.0 Ethernet controller: VMware VMXNET3 Ethernet Controller (rev 01)
 
-eth0      Link encap:Ethernet  HWaddr xx:xx:xx:xx:xx:xx  
-          inet addr:xxx.xxx.xxx.xxx  Bcast:xxx.xxx.xxx.xxx  Mask:255.255.240.0
-          inet6 addr: xxxx::xxxx::xxxx:xxxx Scope:Link
-          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
-          RX packets:2555973 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:2626044 errors:0 dropped:0 overruns:0 carrier:0
-          collisions:0 txqueuelen:1000 
-          RX bytes:229577789 (218.9 MiB)  TX bytes:195962302 (186.8 MiB)
-
-eth1      Link encap:Ethernet  HWaddr  xx:xx:xx:xx:xx:xx  
-          inet addr:xxx.xxx.xxx.xxx  Bcast:xxx.xxx.xxx.xxx  Mask:255.255.240.0
-          inet6 addr: xxxx::xxxx::xxxx:xxxx Scope:Link
-          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
-          RX packets:279052 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:172901 errors:0 dropped:0 overruns:0 carrier:0
-          collisions:0 txqueuelen:1000 
-          RX bytes:31319261 (29.8 MiB)  TX bytes:19242658 (18.3 MiB)
-
-lo        Link encap:Local Loopback  
-          inet addr:127.0.0.1  Mask:255.0.0.0
-          inet6 addr: ::1/128 Scope:Host
-          UP LOOPBACK RUNNING  MTU:65536  Metric:1
-          RX packets:37091409 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:37091409 errors:0 dropped:0 overruns:0 carrier:0
-          collisions:0 txqueuelen:0 
-          RX bytes:15891032452 (14.7 GiB)  TX bytes:15891032452 (14.7 GiB)
-
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN 
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP qlen 1000
+    link/ether xx:xx:xx:xx:xx:xx brd ff:ff:ff:ff:ff:ff
+    inet xxx.xxx.xxx.xxx/xxx  Bcast:xxx.xxx.xxx.xxx scope global eth0
+    inet6 xxxx::xxxx::xxxx:xxxx scope link 
+       valid_lft forever preferred_lft forever
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP qlen 1000
+    link/ether xx:xx:xx:xx:xx:xx brd ff:ff:ff:ff:ff:ff
+    inet xxx.xxx.xxx.xxx/xxx  Bcast:xxx.xxx.xxx.xxx scope global eth0
+    inet6 xxxx::xxxx::xxxx:xxxx scope link 
+       valid_lft forever preferred_lft forever
 ---------------------------
 -----INFO-DISK-------------
 ---------------------------
